@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <style>
+        body {
+            background-color: #2445a6;
+        }
+
+        #form-container {
+            background-color: #58778b;
+            color: #FFFFFF;
+            width: 25vw;
+            height: 30vh;
+            text-align: center;
+            margin: auto;
+            margin-top: 37.5vh;
+            border: 5px solid #FFFFFF;
+            border-radius: 5%;
+        }
+
+        .form-group {
+            margin: 5%;
+        }
+
+        .form-control {
+            width: 20vw;
+            height: 3vh;
+            margin-bottom: 1%;
+        }
+
+        .form-actions {
+            margin: 5%;
+        }
+
+        .btn-primary {
+            background-color: #00bfff;
+            width: 4vw;
+            height: 3.2vh;
+            border-radius: 10%;
+            margin-left: 3vw;
+        }
+
+        .back-link {
+            color: #F34545;
+        }
+    </style>
+</head>
+<body>
+    <div id="form-container">
+        <form action="/signup" method="post">
+            <div class="form-group">
+                <input type="text" name="username" placeholder="Username" required class="form-control">
+                <input type="text" name="first_name" placeholder="First Name" required class="form-control">
+                <input type="text" name="last_name" placeholder="Last Name" required class="form-control">
+                <input type="password" name="password" placeholder="Password" required class="form-control">
+            </div>
+            
+            <div class="form-actions">
+                <a href="/" class="back-link">
+                    <button type="button" class="btn-primary">Back</button>
+                </a>
+                <button type="submit" class="btn-primary">Sign Up</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

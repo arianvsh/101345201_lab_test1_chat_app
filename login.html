@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            background-color: #2445a6;
+        }
+        #container {
+            background-color: #58778b;
+            color: #FFFFFF;
+            width: 30vw;
+            height: 35vh;
+            text-align: center;
+            margin: auto;
+            margin-top: 39vh;
+            border: 2px solid #100e0e;
+            border-radius: 2%;
+        }
+        #input {
+            margin: 5%;
+        }
+        input {
+            width: 20vw;
+            height: 3vh;
+            margin-bottom: 1%;
+        }
+        select {
+            width: 15vw;
+            height: 3vh;
+        }
+        #buttons {
+            margin: 5%;
+        }
+        button {
+            background-color: #00bfff;
+            width: 4vw;
+            height: 3.2vh;
+            border-radius: 10%;
+            margin-left: 3vw;
+        }
+        a {
+            color: #244c9c;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form id="login_form" action="/" method="post">
+            <div id="input_container">
+                <input id="username_field" type="text" name="username" placeholder="User name" required>
+                <input type="password" name="password" placeholder="Password" required>
+            </div>
+            <div id="buttons_container">
+                <button id="submit_button" type="submit">Login</button>
+                <br><br>
+                <label>Don't have an account? </label>
+                <a href="/register">Sign Up</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
